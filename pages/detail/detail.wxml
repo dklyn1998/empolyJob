@@ -1,0 +1,94 @@
+
+    <view class='innerbox'>
+    <view>
+    <text>{{detail.title}}</text>
+    <text>{{salary}}/月</text>
+    </view>
+    <text class='textneed'>{{detail.region_name}} | {{detail.sex==1?'男':detail.sex==2?'女':'男女不限'}} | {{detail.agemin}}岁～{{detail.agemax}}岁</text>
+    <view class='otherbox'>
+    <view class='box' wx:for='{{welfare}}' wx:key='{{index}}'>
+      <text>{{item}}</text>
+    </view>
+    </view>
+    <!-- 红包和收藏 -->
+    <view class="twobox">
+    <view class='shoucang' bindtap='shouchang'>
+    <image src='/image/shoucang.png'></image>
+    <text>收藏</text>
+    </view>
+    <view class='hongbao' bindtap='sharemoney'>
+    <image src='/image/hongbao.png'></image>
+    <text>分享赚赏金</text>
+    </view>
+    </view>
+  </view>
+  <!-- 联系方式 -->
+  <view class='chat'>
+  <view class='topmsg'>
+     <image src='/image/squer.png'></image>
+    <text>联系方式</text>
+  </view>
+  <view class='inner'>
+    <view class='people'>
+      <image src='/image/lanxiren.png'></image>
+      <text>{{detail.company_name}}</text>
+    </view>
+    <view class='celphone' tel='{{detail.company_mobile}}'>
+        <image src='/image/phone.png'></image>
+      </view>
+    <view class='number'>
+    <image src='/image/dianhua.png'></image>
+      <text>{{detail.company_mobile}}</text>
+      </view>
+  </view>
+</view>
+<!-- 职位详情 -->
+<view class="detail">
+    <view class='jobdetail'>
+      <image src='/image/squer.png'></image>
+      <text>职位详情</text>
+    </view>
+    <text>工作内容： 
+    {{detail.content}}
+    </text>
+</view>
+<view class='btn'>
+<button class='btn1'  open-type='contact'>立即沟通</button>
+<button class='btn2' bindtap='bindpost'>申请职位</button>
+</view>
+<!-- 申请职位信息填写 -->
+<!-- 黑色背景 -->
+<view class='blackbg' bindtap='cancel' wx:if="{{isshow==1||isshow==2}}"></view>
+<!-- 弹出框 -->
+<view class='individel' wx:if="{{isshow==1}}">
+<text class='text'>个人资料填写</text>
+<view>
+  <text>姓名</text>
+  <input placeholder='请输入姓名' bindinput='username'></input>
+</view>
+<view>
+  <text>性别</text>
+  <input placeholder='请输入性别' bindinput='usersex'></input>
+</view>
+<view>
+  <text>联系电话</text>
+  <input placeholder='请输入联系电话' bindinput='userno'></input>
+</view>
+<view>
+<button bindtap='cancel'>取消</button>
+<button bindtap='sendmsg'>确定</button>
+</view>
+</view>
+<!-- 红包分享 -->
+<view class='sharetofriend' wx:if="{{isshow==2}}">
+  <text>分享到</text>
+  <view class='wxleft' bindtap='sharetofriend'>
+  <image src="/image/wx1.png" />
+  <text>邀请好友</text>
+  </view>
+  <view class='wxright' bindtap='sharetofriend'>
+  <image src="/image/wx2.png" />
+  <text>发送到朋友圈</text>
+  </view>
+  <button bindtap='cancel'>取消</button>
+</view>  

@@ -1,0 +1,297 @@
+/* 详情页面头部区域 */
+page{
+  background-color: #F4F3F8;
+}
+.innerbox{
+  border-top: 1px solid #e7e7e7;
+  padding: 30rpx;
+  background-color: #fff;
+}
+.innerbox>text{
+  display: block;
+}
+.innerbox>view{
+  margin-bottom: 20rpx;
+}
+.innerbox>view>text:nth-child(1){
+  font-size: 27rpx;
+  color: #666;
+}
+.innerbox>view>text:nth-child(2){
+  float: right;
+  font-size: 27rpx;
+  color: #52CAC1;
+}
+.innerbox>.textneed{
+  font-size: 25rpx;
+  color: #999;
+}
+
+.innerbox>.otherbox{
+  display: flex;
+}
+.innerbox>.otherbox>.box{
+  width:120rpx;
+  height: 50rpx;
+  background-color: #52CAC1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 29rpx;
+  margin-right: 20rpx;
+  color: #009999;
+  font-size: 23rpx;
+  opacity: 0.79;
+}
+.innerbox>.otherbox>.box>text{
+  opacity: 1;
+}
+.innerbox>.otherbox>.box:nth-child(2){
+  background-color:#FBF7D1;
+  color:#999900;
+}
+.innerbox>.otherbox>.box:nth-child(3){
+  background-color: #DBF1FF;
+  color: #5DB3AC;
+}
+.innerbox>.otherbox>.box:nth-child(4){
+  background-color: #CD9E6A;
+  color: #FFFFFF;
+}
+/* 红包和收藏模块 */
+.twobox{
+  display: flex;
+  justify-content: flex-end;
+  background-color: #fff;
+}
+.shoucang,.hongbao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 20rpx;
+}
+.hongbao{
+  margin-left:50rpx;
+}
+.shoucang>image,.hongbao>image{
+  width: 54rpx;
+  height: 54rpx;
+}
+.shoucang>text{
+  font-size: 24rpx;
+  color: #52CAC1;
+  margin-top: 10rpx;
+}
+.hongbao>text{
+  font-size: 24rpx;
+  color: #D81E06;
+  margin-top: 10rpx;
+}
+/* 联系方式 */
+.topmsg{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1rpx solid #999;
+  padding:8rpx;
+  background-color: #fff;
+}
+.topmsg>image{
+  width: 8rpx;
+  height: 53rpx;
+  margin-left:23rpx;
+  margin-right:19rpx; 
+}
+.topmsg>text{
+  font-size: 27rpx;
+  color: #333;
+}
+/* 联系方式内容 */
+.inner{
+  padding: 10rpx 60rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.inner image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.inner text{
+  font-size: 23rpx;
+  color: #666666;
+  margin-left:40rpx;
+}
+.inner>view{
+  display: flex;
+  align-items: center;
+}
+.inner>.celphone>image{
+  width: 52rpx;
+  height: 52rpx;
+}
+.inner>.celphone{
+  display: flex;
+  justify-content: flex-end;
+}
+/* 职位详情顶部bar */
+.jobdetail{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1rpx solid #999;
+  padding:8rpx;
+  background-color: #fff;
+}
+.jobdetail>image{
+  width: 8rpx;
+  height: 53rpx;
+  margin-left:23rpx;
+  margin-right:19rpx; 
+}
+.jobdetail>text{
+  font-size: 27rpx;
+  color: #333;
+}
+.detail{
+  background-color: #fff;
+}
+.detail>text{
+  padding:30rpx;
+  font-size: 24rpx;
+  color: #666;
+  padding-right: 52rpx;
+  display: block;
+}
+/* 底部按钮 */
+.btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  position: fixed;
+  bottom: 0;
+}
+.btn>.btn1{
+  width: 250rpx;
+  height: 80rpx;
+  background-color: #6CB2F8;
+  color: #fff;
+  margin-left: 30rpx;
+  margin-bottom: 20rpx;
+  font-size: 34rpx;
+  line-height: 80rpx;
+  border: 1rpx solid #6CB2F8;
+}
+.btn>.btn2{
+  width: 407rpx;
+  height: 80rpx;
+  background-color: #52CAC1;
+  color: #fff;
+  margin-left: 30rpx;
+  margin-bottom: 20rpx;
+  font-size: 34rpx;
+  line-height: 80rpx;
+}
+/* 黑色背景 */
+.blackbg{
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+/* 弹出框 */
+.individel{
+  position: fixed;
+  z-index: 102;
+  top: 20%;
+  left: 2.5%;
+  background-color: #fff;
+  width:90%;
+  height: 547rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx;
+  padding: 20rpx;
+}
+.individel>.text{
+  font-size: 34rpx;
+  margin-bottom: 30rpx;
+}
+.individel>view{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  border-bottom: 1rpx solid #ccc;
+  align-items: center;
+  color: #666;
+}
+.individel>view:last-child{
+  border: none;
+}
+.individel>view>input{
+  text-align: right;
+  color: #000;
+}
+.individel>view>button{
+  width: 240rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  margin: 0;
+  margin-top: 40rpx;
+}
+.individel>view>button:nth-child(1){
+  background-color: #6CB2F8;
+}
+.individel>view>button:nth-child(2){
+  background-color: #52CAC1;
+}
+/* 分享到朋友圈 */
+.sharetofriend{
+  height:400rpx;
+  width: 100%;
+  background-color: #E1E1E1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  padding: 30rpx;
+  display: flex;
+  justify-content:space-around ;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.sharetofriend>text{
+  font-size: 34rpx;
+  width: 100%;
+}
+.sharetofriend>view{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.sharetofriend>view>image{
+  width: 120rpx;
+  height: 120rpx;
+  margin-top: -80rpx;
+  margin-bottom: 30rpx;
+}
+.sharetofriend>view>text{
+  color: #414141;
+}
+.sharetofriend>button{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80rpx;
+  line-height: 80rpx;
+}

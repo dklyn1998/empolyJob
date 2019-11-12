@@ -1,0 +1,16 @@
+<text>充值金额</text>
+<view class='outbox'>
+<view 
+    class='box {{num==index?"active":""}}' 
+    wx:for="{{money}}" 
+    data-index='{{index}}' 
+    wx:key="{{index}}" 
+    bindtap="isactive"
+>
+<text>{{item}}</text>
+</view>
+<view class='box' bindtap="choosemoney">
+<input placeholder='自定义金额' bindinput='myset'></input>
+</view>
+</view>
+<button bindtap="payfor">微信支付充值按钮</button>

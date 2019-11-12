@@ -1,0 +1,13 @@
+<image src='/image/hunterbanner.png' class='topbanner'></image>
+<text class='reg'>注册信息填写</text>
+<view class='msg'>
+  <image src='/image/hunterpeople.png'></image>
+  <text>姓名</text>
+  <input placeholder='请输入姓名' bindinput='huntername'></input>
+</view>
+<view class='tel'>
+  <image src='/image/hunterphone.png'></image>
+  <text>手机号码</text>
+  <input placeholder='请输入手机号码' bindinput='hunternum'></input>
+</view>
+<button bindtap='shenhe'>立即注册</button>

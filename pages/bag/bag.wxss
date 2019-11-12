@@ -1,0 +1,65 @@
+page{
+  background-color: #F4F3F8;
+}
+/* 顶部钱包图片集处理 */
+.toppic{
+  position: relative;
+}
+.toppic>.bagpic{
+  width: 100%;
+}
+.toppic>.innertext{
+  position: absolute;
+  top: 230rpx;
+  left: 60rpx;
+}
+.toppic>.innertext>text:nth-child(1){
+  display: block;
+  font-size: 34rpx;
+  color: #fff;
+}
+.toppic>.innertext>text:nth-child(2){
+  font-size: 20rpx;
+  margin-right: 20rpx;
+  color: #fff;
+}
+.toppic>.innertext>text:nth-child(3){
+  font-size: 47rpx;
+  color: #fff;
+}
+.dot{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 275rpx;
+  right: 220rpx;
+}
+.list{
+  margin-top: 30rpx;
+  border-bottom: 1rpx #bbb solid;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+}
+.list>.earn{
+  font-size: 34rpx;
+  color: #343434;
+}
+.list>.money{
+  font-size: 31rpx;
+  color: #999999;
+}
+.list>.cash{
+  color:#fff;
+  width: 102rpx;
+  height: 56rpx;
+  background-color: #52CAC1;
+  text-align: center;
+  line-height: 56rpx;
+}
+.list>.more{
+  font-size: 32rpx;
+  color: #bbb;
+}

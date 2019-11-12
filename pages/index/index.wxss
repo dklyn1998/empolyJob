@@ -1,0 +1,234 @@
+/**index.wxss**/
+page{
+  background-color: #f4f3f8;
+}
+/* 头部区域 */
+.contain{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.contain>.find{
+  display:flex;
+  justify-content:flex-end;
+  flex-wrap:nowrap;
+  flex-direction: row;
+  border: 1px solid #f2f2f2;
+  width:95%;
+  border-radius: 68rpx;
+  background-color: #fff;
+  height: 68rpx;
+  align-items: center;
+}
+.contain>.find>text{
+  width: 90rpx;
+  font-size: 23rpx;
+  text-align: center;
+  vertical-align:middle;
+  line-height: 68rpx;
+}
+.contain>.find>text:nth-child(1){
+  margin-left:20rpx;
+}
+.contain>.find>image{
+  width: 16rpx;
+  height: 11rpx;
+  text-align: center;
+  vertical-align:middle;
+  line-height: 68rpx;
+  margin-left:20rpx;
+}
+.contain>.find>input{
+  font-size: 23rpx;
+  width: 100%;
+}
+.contain>.find>button{
+  height: 68rpx;
+  width: 145rpx;
+  background: #52CAC1;
+  border-radius: 0 68rpx 68rpx 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contain>.find>button>image{
+  width: 45rpx;
+  height: 45rpx;
+}
+/* 轮播图区域 */
+.contain>swiper{
+  width:  630rpx;
+  height: 275rpx;
+  margin-top: 10rpx;
+}
+swiper-item>image {
+    height: 100%;
+    width: 100%;
+}
+/* 工作区域栏 */
+.contain>.findjob{
+  display: flex;
+  margin-top:20rpx;
+  margin-bottom: 30rpx;
+}
+.contain>.findjob>view{
+  margin-left: 50rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contain>.findjob>view:nth-child(1){
+  margin-left: 0;
+}
+.contain>.findjob>view>image{
+  width: 110rpx;
+  height: 110rpx;
+}
+.contain>.findjob>view>text{
+  margin-top: 6rpx;
+}
+/* 最新职位 */
+.newjob{
+  display: flex;
+  justify-content: flex-start;
+  background-color:#fff; 
+  flex-direction: column;
+  margin-bottom: 42rpx;
+}
+.newjob>.topnew{
+  height: 68rpx;
+  display: flex;
+  align-items: center;
+}
+.newjob>.topnew>image{
+  width: 8rpx;
+  height: 53rpx;
+  margin-left: 31rpx;
+  margin-right: 9rpx;
+}
+.newjob>.innerbox{
+  border-top: 1px solid #e7e7e7;
+  padding: 30rpx;
+}
+.newjob>.innerbox>text{
+  display: block;
+}
+.newjob>.innerbox>view{
+  margin-bottom: 20rpx;
+}
+.newjob>.innerbox>view>text:nth-child(1){
+  font-size: 27rpx;
+  color: #666;
+}
+.newjob>.innerbox>view>text:nth-child(2){
+  float: right;
+  font-size: 27rpx;
+  color: #52CAC1;
+}
+.newjob>.innerbox>.textneed{
+  font-size: 25rpx;
+  color: #999;
+}
+.newjob>.innerbox>text:last-child{
+  float: right;
+  font-size: 22rpx;
+  color: #999;
+}
+.newjob>.innerbox>.otherbox{
+  display: flex;
+}
+.newjob>.innerbox>.otherbox>.box{
+  width:120rpx;
+  height: 50rpx;
+  background-color: #52CAC1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 29rpx;
+  margin-right: 20rpx;
+  color: #009999;
+  font-size: 23rpx;
+  opacity: 0.79;
+}
+.newjob>.innerbox>.otherbox>.box>text{
+  opacity: 1;
+}
+.newjob>.innerbox>.otherbox>.box:nth-child(2){
+  background-color:#FBF7D1;
+  color:#999900;
+}
+.newjob>.innerbox>.otherbox>.box:nth-child(3){
+  background-color: #DBF1FF;
+  color: #5DB3AC;
+}
+.newjob>.innerbox>.otherbox>.box:nth-child(4){
+  background-color: #CD9E6A;
+  color: #FFFFFF;
+}
+/* 红包区域 */
+.getgold{
+  width: 160rpx;
+  height: 185rpx;
+  position: fixed;
+  bottom: 20rpx;
+  right: 20rpx;
+}
+/* 大红包 */
+.bigredbag{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+.bigredbag>image{
+  width: 100%;
+  height: 983rpx;
+}
+.bigredbag>text:nth-child(1){
+  position: absolute;
+  top: 100rpx;
+  left: 0;
+  z-index: 300;
+}
+.innertext{
+  position: absolute;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #fff;
+}
+.innertext>text:nth-child(1){
+  font-size: 80rpx;
+
+}
+.innertext>text:nth-child(2){
+  font-size: 100rpx;
+  margin-top: 30rpx;
+}
+.innertext>text:nth-child(3){
+  font-size: 36rpx;
+  margin-top: 30rpx;
+}
+/* q取消按钮 */
+.innertext>image{
+  width:71rpx ;
+  height: 71rpx;
+  margin-top: 120rpx;
+}
+/* 黑色背景 */
+.blackbg{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.4);
+}

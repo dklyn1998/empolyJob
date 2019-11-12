@@ -1,0 +1,26 @@
+<!--pages/interact/interact.wxml-->
+<!-- 顶部区域 -->
+<view class='topbar'>
+    <view><text class='{{currentData== 1 ?"active":""}}' bindtap="changemsg1" data-type='1'>附近人</text></view>
+    <view><text class="{{currentData== 2 ?'active':''}}" bindtap="changemsg2" data-type='2'>企业</text></view>
+</view>
+<!-- 信息区域 -->
+<view wx:if="{{currentData==1}}">
+<view class='msgbox' wx:for="{{nearpeople}}" wx:key="{{item.id}}">
+  <image src='{{item.avatarUrl}}'></image>
+  <view>
+  <text>{{item.nickName}}</text>
+  <text>距离你{{item.distance}}米</text>
+  </view>
+</view>
+</view>
+<!--公司区域-->
+<view wx:if="{{currentData==2}}">
+<view class='msgbox' wx:for="{{nearpeople}}" wx:key="{{item.id}}">
+  <image src='{{item.avatarUrl}}'></image>
+  <view>
+  <text>{{item.nickName}}</text>
+  <text>距离你{{item.distance}}米</text>
+  </view>
+</view>
+</view>

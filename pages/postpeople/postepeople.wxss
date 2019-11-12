@@ -1,0 +1,43 @@
+/* pages/interact/interact.wxss */
+page{
+  background-color: #F4F3F8;
+}
+.msgbox{
+  padding: 30rpx 26rpx;
+  display: flex;
+  height: 100rpx;
+  border-bottom: 1px solid #eee;
+}
+.msgbox>image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.msgbox>view{
+  margin-left: 50rpx;
+  width: 100%;
+  position: relative;
+}
+.msgbox>view>text:nth-child(1){
+font-size: 34rpx;
+color:#323232;
+}
+.phone{
+  width: 52rpx;
+  height: 52rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.msgbox>view>text:nth-child(2){
+  font-size: 23rpx;
+  color:#787878;
+  display: block;
+  text-align: right;
+}
+.msgbox>view>text:nth-child(3){
+  font-size: 22rpx;
+  color:#787878;
+  display: block;
+}

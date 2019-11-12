@@ -1,0 +1,53 @@
+
+page{
+  background-color: #F4F3F8;
+}
+.box{
+  width:85%;
+  height: 250rpx;
+  margin: 40rpx auto;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-shadow: 10px 10px 5px #f3f0f0;
+  padding: 40rpx;
+}
+/* 内容部分 */
+.topmsg{
+  display: flex;
+  justify-content: space-between;
+  color: #999999;
+  font-size: 30rpx;
+}
+.topmsg>text:nth-child(2){
+  font-size: 25rpx;
+}
+.middle{
+  font-size: 80rpx;
+  border-bottom: 1rpx #ccc solid;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.middle>text{
+  margin-right: 30rpx;
+}
+.middle>input{
+  height: 80rpx;
+}
+.bottom{
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom>text:nth-child(2){
+  text-align: right;
+  color: #52CAC1;
+}
+button{
+  color: #fff;
+  background-color: #52CAC1;
+  border: none;
+  width: 95%;
+}

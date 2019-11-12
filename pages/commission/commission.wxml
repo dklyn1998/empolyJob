@@ -1,0 +1,15 @@
+<view class='box'>
+  <view class='topmsg'>
+  <text>佣金将提现到微信</text>
+  <text>注：提现需是20的倍数</text>
+  </view>
+  <view class='middle'>
+  <text>￥</text>
+  <input placeholder='请输入金额' ></input>
+  </view>
+  <view class='bottom'>
+  <text>账户余额：￥1.00</text>
+  <text>提现记录</text>
+  </view>
+</view>
+<button bindtap="togetmoney">提现到微信</button>

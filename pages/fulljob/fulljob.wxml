@@ -1,0 +1,49 @@
+<!-- 头部区域 -->
+<view class='topbar'>
+<text bindtap='city'  class='{{isshow==1?"active":""}}'>全城市∨</text>
+<text class='{{isshow==2?"active":""}}' bindtap='bindkind'>职位类别∨</text>
+<text class='{{isshow==3?"active":""}}' bindtap="sort">排序∨</text>
+</view>
+<!-- 内容区域 -->
+<view class='newjob'>
+  <view class='innerbox'
+   bindtap='binddetail' 
+   wx:for='{{fulljobmsg}}' 
+   wx:key="{{id}}" 
+   data-index='{{index}}' 
+   data-id='{{item.id}}'
+   data-user_id='{{item.user_id}}'
+   >
+  <view>
+  <text>{{item.title}}</text>
+  <text>{{item.salary}}/月</text>
+  </view>
+  <text class='textneed'>{{item.region_name}} | {{item.sex==1?'男':item.sex==2?'女':'男女不限'}} | {{item.agemin}} 岁～{{item.agemax}}岁</text>
+  <view class='otherbox'>
+  <view class='box' wx:for='{{item.welfare}}' wx:key='{{index}}'>
+    <text>{{item}}</text>
+  </view>
+  </view>
+  <text>{{item.ctime}}小时前发布</text>
+  </view>
+  </view>
+  <!-- 背景变黑 -->
+<view class='bgcolor' wx:if="{{isshow==1||isshow==2||isshow==3}}" bindtap='cancel'>
+</view>
+    <!-- 全城市下拉框 -->
+
+<view class='allcity' wx:if="{{isshow=='1'}}">
+<text class="{{num==index ? 'active' : ''}}" 
+bindtap='addclass' wx:for='{{citylist}}' 
+data-index="{{index}}" 
+wx:key='{{index}}'>{{item}}</text>
+</view>
+ 
+ <!-- 职位类别下拉框 -->
+<view class="kind "wx:if="{{isshow=='2'}}" >
+<text class="{{num==index? 'active1':''}}" wx:for='{{jobkind}}' wx:key='{{index}}' data-index="{{index}}" bindtap='addclass1'>{{item}}</text>
+</view>
+<!-- 职位类别下拉框 -->
+<view class="kind "wx:if="{{isshow=='3'}}" >
+<text class="order {{num-1==index? 'active1':''}}" wx:for='{{order}}' wx:key='{{index}}' data-index="{{index+1}}" bindtap='addclass2'>{{item}}</text>
+</view>

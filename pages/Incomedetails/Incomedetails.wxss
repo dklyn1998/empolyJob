@@ -1,0 +1,62 @@
+page{
+  background-color: #F4F3F8;
+}
+/* 收入明细头部相关信息 */
+.choosemonth{
+  font-size: 34rpx;
+  color: #383838;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+.choosemonth>text:nth-child(2){
+  margin-left:8rpx; 
+}
+.earnmoney{
+  font-size: 28rpx;
+  color: #969696;
+  margin-left: 30rpx;
+  margin-bottom: 30rpx;
+  display: block;
+  margin-top: 10rpx;
+}
+.inner{
+  height: 100rpx;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  border-bottom: 1rpx solid #EBEBEB;
+}
+.inner>image{
+  width: 90rpx;
+  height: 90rpx;
+  margin-right: 30rpx;
+}
+.inner>.left{
+  float: left;
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+.inner>.left>text:nth-child(1){
+  font-size: 26rpx;
+  color: #333;
+}
+.inner>.left>text:nth-child(2){
+  font-size: 22rpx;
+  color: #B5B5B5;
+  margin-top: 20rpx;
+}
+.inner>.right{
+  float: right;
+  flex: 2;
+}
+.inner>.right>text:nth-child(1){
+  font-size: 16rpx;
+  color: #333;
+}
+.inner>.right>text:nth-child(2){
+  font-size: 28rpx;
+  color: #333;
+  margin-top: 20rpx;
+}

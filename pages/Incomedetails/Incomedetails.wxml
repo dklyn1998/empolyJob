@@ -1,0 +1,54 @@
+<view class='choosemonth'>
+  <text>2019年6月</text>
+  <text>∨</text>
+</view>
+<text class='earnmoney'>共计收入￥200.00</text>
+<view class='inner'>
+  <image src='/image/biggold.png'></image>
+  <view class='left'>
+    <text>佣金收入</text>
+    <text>6月29日 13:56</text>
+  </view>
+  <view class='right'>
+    <text>￥</text>
+    <text>100.00</text>
+  </view>   
+</view>
+<view class='inner'>
+  <image src='/image/biggold.png'></image>
+  <view class='left'>
+    <text>佣金收入</text>
+    <text>6月29日 13:56</text>
+  </view>
+  <view class='right'>
+    <text>￥</text>
+    <text>100.00</text>
+  </view>   
+</view>
+<view class='choosemonth'>
+  <text>2019年6月</text>
+  <text>∨</text>
+</view>
+<text class='earnmoney'>共计收入￥200.00</text>
+<view class='inner'>
+  <image src='/image/biggold.png'></image>
+  <view class='left'>
+    <text>佣金收入</text>
+    <text>6月29日 13:56</text>
+  </view>
+  <view class='right'>
+    <text>￥</text>
+    <text>100.00</text>
+  </view>   
+</view>
+<view class='inner'>
+  <image src='/image/biggold.png'></image>
+  <view class='left'>
+    <text>佣金收入</text>
+    <text>6月29日 13:56</text>
+  </view>
+  <view class='right'>
+    <text>￥</text>
+    <text>100.00</text>
+  </view>   
+</view>

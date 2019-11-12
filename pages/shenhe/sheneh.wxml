@@ -1,0 +1,7 @@
+<view class='topimg'>
+  <image src='/image/shenhebanner.png' class='banner'></image>
+  <image src='/image/shenhepic.png' class='pic'></image>
+</view>
+<text class='success'>提交成功，请等待管理员审核</text>
+<text class='com'>预计一个工作日内审核完毕</text>
+<button bindtap='hunterself'>好的</button>

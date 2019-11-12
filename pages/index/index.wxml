@@ -1,0 +1,73 @@
+<!--index.wxml-->
+<view class='contain'>
+  <!-- 搜索栏区域 -->
+  <view class='find'>
+  <text>成都</text><image src='/image/delta.png'></image> <text>|</text> <input placeholder='UI设计'></input><button><image src='/image/find.png'></image></button>
+  </view>
+  <!-- 轮播图区域 -->
+  <swiper class='swiper' circular autoplay>
+    <swiper-item wx:for='{{indeximages}}' wx:key='{{index}}'>
+      <image src='{{item}}'></image>
+    </swiper-item>
+  </swiper>
+  <!-- 工作栏区域 -->
+  <view class='findjob'>
+    <view bindtap='findfulljob'>
+    <image src='/image/quanzhi@3x.png'></image>
+    <text>找全职</text>
+    </view>
+    <view bindtap='findpartimejob'>
+    <image src='/image/jianzhi@3x.png'></image>
+    <text>找兼职</text>
+    </view>
+    <view bindtap='nearpeople'>
+    <image src='/image/fujin@3x.png'></image>
+    <text>附近求职者</text>
+    </view>
+    <view bindtap='nearjob'>
+    <image src='/image/zhaopin@3x.png'></image>
+    <text>附近招聘</text>
+    </view>
+  </view>
+</view>
+  <!-- 热门职位 -->
+  <view class='newjob'>
+    <view class='topnew'>
+    <image src='/image/squer.png'></image>
+      <text>热门职位</text>
+    </view>
+    <view class='innerbox' bindtap='todetail' wx:for="{{indexbottommsg}}" wx:key='{{indexbottommsg.id}}' data-id='{{item.id}}'>
+    <view>
+    <text>{{item.title}}</text>
+    <text>{{item.salary}}/月</text>
+    </view>
+    <text class='textneed'>{{item.region_name}} | {{item.sex==1?'男':item.sex==2?'女':'男女不限'}} | {{item.agemin}}岁～{{item.agemax}}岁</text>
+    <view class='otherbox'>
+    <view class='box' wx:for='{{welfare}}' wx:key='{{index}}'>
+      <text>{{item}}</text>
+    </view>
+    </view>
+    <text>{{item.ctime}}</text>
+    </view>
+</view>
+<!-- 红包区域 -->
+
+<image 
+  src='/image/getgold.png' 
+  class='getgold' 
+  mode='widthFix'  
+  wx:if='{{isshow==0}}' 
+  bindtap='showredbag'>
+</image>
+<!-- 黑色背景 -->
+<view class='blackbg' wx:if='{{isshow==1}}'></view>
+<!-- 大红包 -->
+<view class='bigredbag' wx:if='{{isshow==1}}'>
+  <image src="/image/bigredbag.png"></image>
+  <view class='innertext'>
+  <text>恭喜您分享获得</text>
+  <text>7.01 元</text>
+  <text>金额已自动存入钱包</text>
+  <image src="/image/quxiao.png" bindtap='hidredbag'></image>
+</view>
+</view>

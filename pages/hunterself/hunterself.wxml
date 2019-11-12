@@ -1,0 +1,28 @@
+<!-- 顶部用户信息栏 -->
+<view calss='topmsg'>
+  <image src='/image/background.png' class='bgimg'></image>
+  <view class='usermsg'>
+    <image src='/image/lanxiren.png'></image>
+    <view>
+    <text>{{name}}</text>
+    <text>已接{{num}}单</text>
+    </view>
+  </view>
+  <image src='/image/shezhi.png' class='shezhi'></image>
+</view>
+<!-- 中部区域 -->
+<view class='list' bindtap='myjob'>
+    <image src='/image/edite.png' class='fimg'></image>
+    <text>查看职位</text>
+    <image src='/image/more.png' class='simg'></image>
+</view>
+<view class='list' bindtap='share'>
+    <image src='/image/col.png' class='fimg' ></image>
+    <text>接单职位</text>
+    <image src='/image/more.png' class='simg'></image>
+</view>
+<view class='list' bindtap='feedback'>
+    <image src='/image/reback.png' class='fimg'></image>
+    <text>意见反馈</text>
+    <image src='/image/more.png' class='simg'></image>
+</view>

@@ -1,0 +1,67 @@
+<view class='msg'>
+<text>职位类型</text>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+        {{array[index]}}
+        </view>
+    </picker>
+</view>
+<view class='msg'>
+    <text>职位类别</text>
+    <picker bindchange="bindPickerChangekind" value="{{kindof}}" range="{{jobtype.jobtype}}" range-key='name'>
+        <view class="picker">
+        {{jobtype.jobtype[kindof].name}}
+        </view>
+    </picker>
+</view>
+<view class='msg'>
+<text>职位名称</text>
+<input placeholder='苹果手机客服' bindinput='bindtitle'></input>
+</view>
+<view class='msg'>
+<text>薪资</text>
+<input placeholder='3000/月' bindinput='salary'></input>
+</view>
+<view class='msg'>
+<text>招聘性别</text>
+    <picker bindchange="bindPickerChangesex" value="{{sexno}}" range="{{sex}}">
+        <view class="picker">
+            {{sex[sexno]}}
+        </view>
+    </picker>
+</view>
+<view class='msg agefix'>
+<text>招聘年龄</text>
+<input placeholder='最低年龄' bindinput='minage'></input>岁~<input placeholder='最高年龄' bindinput='maxage'></input>岁
+</view>
+<view class='msg'>
+    <text>招聘区域</text>
+    <picker bindchange="bindPickerChangearea" value="{{area}}" range="{{cdarea}}">
+        <view class="picker">
+        {{cdarea[area]}}
+        </view>
+    </picker>
+</view>
+<view class='msg'>
+<text>定位</text>
+<text class='gps'>获取定位</text>
+</view>
+<view class='daiyu'>
+<text>福利待遇</text>
+<text class='daiyu1'>五险一金</text>
+<text class='daiyu2'>交通补贴</text>
+<text class='daiyu2'>年终奖</text>
+</view>
+<view class='msg'>
+<text>联系方式</text>
+<input placeholder='1333333333333' ></input>
+</view>
+<view class='msg tera'>
+<text>职位情况</text>
+<textarea placeholder='请描述职位情况' bindinput='condition'></textarea>
+</view>
+<view class='msg'>
+<text>设置佣金金额</text>
+<input placeholder='100元/单' bindinput='money'></input>
+</view>
+<button bindtap='bindnewjob'>发布新职位</button>

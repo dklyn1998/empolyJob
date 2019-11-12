@@ -1,0 +1,43 @@
+page{
+  padding:30rpx;
+}
+/* 点击变色 */
+.active{
+  background-color: #52CAC1;
+}
+/* 方块形状 */
+.outbox{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.box{
+  width: 330rpx;
+  height: 140rpx;
+  text-align: center;
+  line-height: 140rpx;
+  border:1rpx solid #52CAC1; 
+  margin-bottom: 30rpx;
+  border-radius: 10rpx;
+}
+.box:nth-child(2n){
+  margin-right: 60rpx;
+}
+.box:nth-child(1),.box:nth-child(2){
+  margin-top: 30rpx;
+}
+.box>input{
+  height: 140rpx;
+  width: 100%;
+}
+button{
+  width: 90%;
+  border: none;
+  height: 80rpx;
+  color: #fff;
+  background-color: #52CAC1;
+  margin: 0;
+  line-height: 80rpx;
+  margin-top: 100rpx;
+  border-radius: 40rpx;
+}

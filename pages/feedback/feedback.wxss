@@ -1,0 +1,56 @@
+page{
+  padding: 30rpx;
+  background-color: #F4F3F8;
+}
+/* 标题 */
+input{
+  background-color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 37rpx;
+  width: 90%;
+  padding-left: 20rpx;
+  margin-bottom: 30rpx;
+}
+textarea{
+  background-color: #fff;
+  width: 89%;
+  padding-left: 30rpx;
+  padding-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+.text{
+  font-size: 30rpx;
+  color: #010101;
+}
+/* 相机图片 */
+.outbox{
+  display: flex;
+  justify-content: flex-start;
+  margin:30rpx 0;
+  width: 92%;
+}
+.innerbox{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20rpx;
+  /* justify-content:flex-start; */
+}
+.innerbox>image{
+  width: 100%;
+  height: 100%;
+}
+button{
+  width: 92%;
+  height: 80rpx;
+  background-color: #52CAC1;
+  line-height: 80rpx;
+  margin: 0;
+  color: #fff;
+}
+.addbgc{
+  background:none;
+}

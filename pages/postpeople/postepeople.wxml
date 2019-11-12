@@ -1,0 +1,44 @@
+
+<!-- 信息区域 -->
+<view>
+<view class='msgbox'>
+  <image src='/image/hudong.png'></image>
+  <view>
+  <text>胖大海</text>
+ <image src='/image/phone.png' class='phone'></image>
+  <text>视觉设计师</text>
+  </view>
+</view>
+<view class='msgbox'>
+  <image src='/image/hudong.png'></image>
+  <view>
+  <text>胖大海</text>
+ <image src='/image/phone.png' class='phone'></image>
+  <text>视觉设计师</text>
+  </view>
+</view>
+<view class='msgbox'>
+  <image src='/image/hudong.png'></image>
+  <view>
+  <text>胖大海</text>
+ <image src='/image/phone.png' class='phone'></image>
+  <text>视觉设计师</text>
+  </view>
+</view>
+<view class='msgbox' >
+  <image src='/image/hudong.png'></image>
+  <view>
+  <text>胖大海</text>
+ <image src='/image/phone.png' class='phone'></image>
+  <text>视觉设计师</text>
+  </view>
+</view>
+<view class='msgbox'>
+  <image src='/image/hudong.png'></image>
+  <view>
+  <text>胖大海</text>
+  <image src='/image/phone.png' class='phone'></image>
+  <text>视觉设计师</text>
+  </view>
+</view>
+</view>

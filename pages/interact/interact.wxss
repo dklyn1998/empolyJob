@@ -1,0 +1,55 @@
+/* pages/interact/interact.wxss */
+page{
+  background-color: #F4F3F8;
+}
+.topbar{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 80rpx;
+}
+.topbar>view{
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+.topbar>view>text{
+  color:#787878;
+  line-height:80rpx;
+}
+.topbar>view>.active{
+  color: #52CAC1;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #52CAC1;
+}
+.msgbox{
+  padding: 30rpx 26rpx;
+  display: flex;
+  height: 100rpx;
+  border-bottom: 1px solid #eee;
+}
+.msgbox>image{
+  width: 113rpx;
+  height: 90rpx; 
+  border-radius: 50%;
+  overflow: hidden;
+}
+.msgbox>view{
+  margin-left: 50rpx;
+  width: 100%;
+}
+.msgbox>view>text:nth-child(1){
+font-size: 34rpx;
+color:#323232;
+}
+.msgbox>view>text:nth-child(2){
+  font-size: 23rpx;
+  color:#787878;
+  display: block;
+  text-align: right;
+}
+.msgbox>view>text:nth-child(3){
+  font-size: 22rpx;
+  color:#787878;
+  display: block;
+}

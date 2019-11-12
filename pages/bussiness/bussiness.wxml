@@ -1,0 +1,66 @@
+<view class='topmsg'>
+<text class='reg'>企业注册</text>
+<text class='city'>【当前城市：成都】</text>
+</view>
+<!-- 中部信息区域 -->
+<view class='middlemsg'>
+<text>选择区域</text>
+<input placeholder='武侯区' bindinput='getarea'></input>
+</view>
+<view class='middlemsg'>
+<text>企业名称</text>
+<input placeholder='请输入企业名称' bindinput='getname'></input>
+</view>
+<view class='middlemsg'>
+<text>企业行业</text>
+<input placeholder='请输入企业行业' bindinput='getbus'></input>
+</view>
+<view class='middlemsg'>
+<text>企业性质</text>
+<picker bindchange="bindPickerChange" 
+        value="{{bussinessindex}}" 
+        range="{{bussinessmsg.jobtype}}" 
+        range-key="name">
+        <view class="picker">
+        {{bussinessmsg.jobtype[bussinessindex].name}}
+        </view>
+</picker>
+  
+</view>
+<view class='middlemsg'>
+<text>人员规模</text>
+    <picker bindchange="bindPickerChangescale" value="{{bussinessscale}}" range="{{bussinessmsg.scale}}">
+        <view class="picker">
+            {{bussinessmsg.scale[bussinessscale]}}
+        </view>
+    </picker>
+</view>
+<view class='middlemsg'>
+<text decode="{{true}}">负责人&nbsp;&nbsp;&nbsp;</text>
+<input placeholder='请输入负责人' bindinput='getduty'></input>
+</view>
+<view class='middlemsg'>
+<text decode="{{true}}">电话&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+<input placeholder='请输入电话' bindinput='getphone'></input>
+</view>
+<view class='middlemsg'>
+<text decode="{{true}}">地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+<input placeholder='请输入地址' bindinput='getaddr'></input>
+</view>
+<text class='intro'>公司介绍</text>
+<textarea class='introarea' placeholder='请输入公司介绍' bindinput='getintro'></textarea>
+<text class='intro'>企业logo</text>
+<view class='intoimg'>
+<block wx:for="{{choosemyimg}}" wx:key='*this'>
+<image src='{{item}}'></image>
+</block>
+<image src='/image/x.png' bindtap='chooseimg'></image>
+</view>
+<text class='intro'>企业执照或相关证件</text>
+<view class='intoimg'>
+<block wx:for="{{choosemyimg2}}" wx:key='*this'>
+<image src='{{item}}'></image>
+</block>
+<image src='/image/x.png' bindtap='chooseimg2'></image>
+</view>
+<button bindtap='bussiness'>注册企业信息</button>

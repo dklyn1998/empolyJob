@@ -1,0 +1,26 @@
+<!-- 顶部用户信息栏 -->
+<view calss='topmsg'>
+  <image src='/image/background.png' class='bgimg'></image>
+  <view class='usermsg'>
+    <image src='{{usermsg.logo}}'></image>
+    <text>{{usermsg.company_name}}</text>
+  </view>
+    <text class='mymoney' bindtap='invest'>余额充值</text>
+    <text class='outjob' bindtap='postnewjob'>发布职位</text>
+</view>
+
+<view class='list' bindtap='myjob'>
+    <image src='/image/edite.png' class='fimg'></image>
+    <text>我的职位表</text>
+    <image src='/image/more.png' class='simg'></image>
+</view>
+<view class='list' bindtap='feedback'>
+    <image src='/image/reback.png' class='fimg'></image>
+    <text>意见反馈</text>
+    <image src='/image/more.png' class='simg'></image>
+</view>
+<view class='list'>
+    <image src='/image/huntermoney.png' class='fimg'></image>
+    <text>赏金猎人佣金设置</text>
+    <text>100元/单</text>
+</view>

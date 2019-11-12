@@ -1,0 +1,98 @@
+page{
+  background-color: #F2F2F2;
+}
+/* 顶部图片 */
+.topmsg{
+  position: relative;
+  width: 100%;
+  height:330rpx;
+}
+.bgimg{
+  width: 100%;
+  height: 330rpx;
+}
+.usermsg{
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.usermsg>image {
+  height: 120rpx;
+  width: 120rpx;
+  margin-left: 60rpx;
+  margin-top: 100rpx;
+  margin-right: 30rpx;
+  border-radius: 50%;
+}
+.usermsg>text{
+  margin-top: 100rpx;
+  font-size: 34rpx;
+  color: #fff;
+  line-height: 120rpx;
+}
+.mymoney{
+  position: absolute;
+  right: 0;
+  top: 220rpx;
+  background-color: #fff;
+  color: #52CAC1;
+  width: 180rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 30rpx 0 0 30rpx;
+}
+/* 赏金猎人 */
+.contain{
+  display: flex;
+  justify-content: flex-start;
+  height: 90rpx;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 10rpx;
+}
+.left ,.right{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left{
+  border-right: 1rpx solid #ccc;
+}
+.left>image,.right>image{
+  width: 47rpx;
+  height: 47rpx;
+  margin-right: 30rpx;
+}
+.left>text,.right>text{
+  font-size: 26rpx;
+  color: #666;
+}
+/* 列表栏 */
+.list{
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100rpx;
+  margin-top: 10rpx;
+  position: relative;
+  padding:  0 24rpx;
+}
+.list>text{
+  font-size: 26rpx;
+  color: #666
+}
+.fimg{
+  width: 31rpx;
+  height: 36rpx;
+  margin-right: 28rpx;
+}
+.simg{
+  width: 15rpx;
+  height: 27rpx;
+  position: absolute;
+  right: 24rpx;
+}

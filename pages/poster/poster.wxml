@@ -1,0 +1,46 @@
+
+    <view class='innerbox'>
+    <view>
+    <text>{{detail.title}}</text>
+    <text>{{salary}}/月</text>
+    </view>
+    <text class='textneed'>{{detail.region_name}} | {{detail.sex==1?'男':detail.sex==2?'女':'男女不限'}} | {{detail.agemin}}岁～{{detail.agemax}}岁</text>
+    <view class='otherbox'>
+  <view class='box' wx:for='{{welfare}}' wx:key='{{index}}'>
+      <text>{{item}}</text>
+    </view>
+    </view>
+  </view>
+  <!-- 联系方式 -->
+  <view class='chat'>
+  <view class='topmsg'>
+     <image src='/image/squer.png'></image>
+    <text>联系方式</text>
+  </view>
+  <view class='inner'>
+    <view class='people'>
+      <image src='/image/lanxiren.png'></image>
+      <text>{{detail.company_name}}</text>
+    </view>
+    <view class='celphone' tel='{{detail.company_mobile}}'>
+        <image src='/image/phone.png'></image>
+      </view>
+    <view class='number'>
+    <image src='/image/dianhua.png'></image>
+      <text>{{detail.company_mobile}}</text>
+      </view>
+  </view>
+</view>
+<!-- 职位详情 -->
+<view class="detail">
+    <view class='jobdetail'>
+      <image src='/image/squer.png'></image>
+      <text>职位详情</text>
+    </view>
+    <text>工作内容： 
+    {{detail.content}}
+    </text>
+</view>
+<!-- 猎人接单 -->
+<button bindtap='getit' class='getit'>猎人接单</button>
+<button bindtap='poster'>查看投递人</button>

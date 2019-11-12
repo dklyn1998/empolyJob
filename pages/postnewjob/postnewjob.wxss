@@ -1,0 +1,82 @@
+page{
+  background-color: #F4F3F8;
+}
+
+.msg{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #ccc;
+  align-items: center;
+}
+.msg>input{
+  text-align: right;
+  line-height: 80rpx;
+  height: 80rpx;
+}
+.gps{
+  height: 50rpx;
+  background-color: #52CAC1;
+  line-height: 50rpx;
+  color: #fff;
+  border-radius: 5rpx;
+}
+.daiyu{
+    display: flex;
+  justify-content:flex-start;
+  padding: 0 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #ccc;
+  align-items: center;
+}
+.daiyu1{
+  background-color: #52CAC1;
+  color: #009999;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-left: 40rpx;
+  padding: 10rpx;
+}
+.daiyu2{
+  background-color: #FBF7D1;
+  color: #999900;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-left: 40rpx;
+  padding: 10rpx;
+}
+.tera{
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.tera>textarea{
+  height: 100rpx;
+  width: 98%;
+  padding:  0 20rpx;
+}
+button{
+  margin-top: 30rpx;
+  background-color: #52CAC1;
+  border: none;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+}
+/* 年龄区域样式修改 */
+.agefix{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.agefix>text{
+  flex: 5;
+}
+.agefix>input{
+  flex: 3;
+}

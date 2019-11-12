@@ -1,0 +1,23 @@
+<!-- 顶部钱包图片集处理 -->
+<view class='toppic'>
+  <image src='/image/bag1.png' class='bagpic'></image>
+  <view class='innertext'>
+  <text>我的佣金</text>
+  <text>¥</text>
+  <text>99.99</text>
+  </view>
+  <image class='dot' src='/image/bagdot.png'></image>
+</view>
+<view class='list'>
+  <text class='earn'>可提现佣金</text>
+  <text class='money'>178.5元</text>
+  <text class='cash' bindtap='getmoney'>提现</text>
+</view>
+<view class='list' bindtap='detail'>
+  <text class='earn'>收入明细</text>
+  <text class='more'>></text>
+</view>
+<view class='list' bindtap='comdetail'>
+  <text class='earn'>提现明细</text>
+  <text class='more'>></text>
+</view>

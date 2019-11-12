@@ -1,0 +1,13 @@
+<input placeholder='请输入标题' class='title' bindinput='getTitle'></input>
+<textarea placeholder='请输入内容' bindinput='getFeed'></textarea>
+<text class='text'>上传照片</text>
+<view class='outbox'>
+<view class='innerbox'>
+<image src='/image/camera.png' bindtap='chooseimg'></image>
+</view>
+<view class='innerbox addbgc'>
+<image src='{{choosemyimg}}' bindtap='chooseimg'></image>
+</view>
+
+</view>
+<button bindtap="submit">提交</button>

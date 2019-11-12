@@ -1,0 +1,40 @@
+<!-- 顶部用户信息栏 -->
+<view calss='topmsg'>
+  <image src='/image/background.png' class='bgimg'></image>
+  <view class='usermsg'>
+    <image src='{{avatarUrl}}'></image>
+    <text>{{nickName}}</text>
+  </view>
+    <text class='mymoney' bindtap='mybag'>我的钱包</text>
+</view>
+<!-- 赏金猎人 -->
+<view class='contain'>
+ <view class='left' bindtap='hunter'>
+    <image src='/image/iconshenqingshangjinxiren.png'></image>
+    <text>赏金猎人</text>
+  </view>
+  <view class='right' bindtap='business'>
+    <image src='/image/qiyezhongxin.png'></image>
+    <text>企业中心</text>
+  </view>
+</view>
+<view class='list' bindtap='myjob'>
+    <image src='/image/edite.png' class='fimg'></image>
+    <text>我的职位表</text>
+    <image src='/image/more.png' class='simg'></image>
+</view>
+<view class='list' bindtap='share'>
+    <image src='/image/fenxiang.png' class='fimg'></image>
+    <text>我的分享</text>
+    <image src='/image/more.png' class='simg'></image>
+</view>
+<view class='list' bindtap='myjob'>
+    <image src='/image/col.png' class='fimg'></image>
+    <text>我的收藏</text>
+    <image src='/image/more.png' class='simg'></image>
+</view>
+<view class='list' bindtap='feedback'>
+    <image src='/image/reback.png' class='fimg'></image>
+    <text>意见反馈</text>
+    <image src='/image/more.png' class='simg'></image>
+</view>

@@ -1,0 +1,22 @@
+<view class='newjob'>
+  <view class='innerbox'
+   bindtap='detail' 
+   wx:for='{{fulljobmsg}}' 
+   wx:key="{{id}}" 
+   data-index='{{index}}' 
+   data-id='{{item.id}}'
+   data-user_id='{{item.user_id}}'
+   >
+  <view>
+  <text>{{item.title}}</text>
+  <text>{{item.salary}}/月</text>
+  </view>
+  <text class='textneed'>{{item.region_name}} | {{item.sex==1?'男':item.sex==2?'女':'男女不限'}} | {{item.agemin}} 岁～{{item.agemax}}岁</text>
+  <view class='otherbox'>
+  <view class='box' wx:for='{{item.welfare}}' wx:key='{{index}}'>
+    <text>{{item}}</text>
+  </view>
+  </view>
+  <text>{{item.ctime}}小时前发布</text>
+  </view>
+  </view>

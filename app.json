@@ -1,0 +1,62 @@
+{
+  "pages": [
+"pages/index/index",
+    "pages/commission/commission",
+    "pages/feedback/feedback",
+    "pages/bussiness/bussiness",
+    "pages/detail/detail",
+    "pages/user/user",    
+    "pages/businessuser/businessuser",
+    "pages/fulljob/fulljob",
+    "pages/interact/interact",
+    "pages/postnewjob/postnewjob",
+    "pages/share/share",
+    "pages/hunterself/hunterself",
+    "pages/hunterjob/hunterjob", 
+    "pages/poster/poster",
+    "pages/myjob/myjob",
+    "pages/mypostjob/mypostjob",
+    "pages/invest/invest",
+    "pages/reghunter/reghunter", 
+    "pages/postpeople/postepeople",
+    "pages/comdetail/comdetail",
+    "pages/Incomedetails/Incomedetails",
+    "pages/shenhe/sheneh"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "波力招聘",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#52CAC1",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/zhaopin2.png",
+        "selectedIconPath": "image/zhaopin.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/interact/interact",
+        "iconPath": "image/hudong.png",
+        "selectedIconPath": "image/hudong2.png",
+        "text": "互动"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "image/wode.png",
+        "selectedIconPath": "image/wode1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission":{
+    "scope.userLocation":{
+      "desc":"获取位置信息中..."
+    }
+  }
+}
