@@ -1,15 +1,15 @@
 {
   "pages": [
-"pages/index/index",
+  "pages/index/index",
+  "pages/postnewjob/postnewjob",
+  "pages/bussiness/bussiness",
+  "pages/feedback/feedback",
     "pages/commission/commission",
-    "pages/feedback/feedback",
-    "pages/bussiness/bussiness",
     "pages/detail/detail",
     "pages/user/user",    
     "pages/businessuser/businessuser",
     "pages/fulljob/fulljob",
     "pages/interact/interact",
-    "pages/postnewjob/postnewjob",
     "pages/share/share",
     "pages/hunterself/hunterself",
     "pages/hunterjob/hunterjob", 
@@ -21,7 +21,8 @@
     "pages/postpeople/postepeople",
     "pages/comdetail/comdetail",
     "pages/Incomedetails/Incomedetails",
-    "pages/shenhe/sheneh"
+    "pages/shenhe/sheneh",
+    "pages/bag/bag"
   ],
   "window": {
     "backgroundTextStyle": "light",

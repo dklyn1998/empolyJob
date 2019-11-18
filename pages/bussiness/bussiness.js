@@ -116,43 +116,32 @@ Page({
       }
     })
   },
-  pictureload(arr){
+  pictureload(){
     wx.chooseImage({
-      count: arr,
+      count: 1,
       sizeType: ['original', 'compressed'],
       sourceType: ['album', 'camera'],
       success: (result) => {
         const tempFilePaths = result.tempFilePaths
+        // console.log(tempFilePaths);
         this.setData({
           tempFilePaths,
           // 图片数组进行赋值并且拼接
-          choosemyimg:result.tempFilePaths//[...this.data.choosemyimg,...result.tempFilePaths]
+          choosemyimg:result.tempFilePaths
         })
-        // console.log(arr)
-        // wx.uploadFile({
-        //   url: 'http://job.dongdongidea.com/index/index/uploads',
-        //   filePath: this.data.tempFilePaths[0],
-        //   name:'img',
-        //   formData: {
-        //     // 'user':'test'
-        //     file:this.data.tempFilePaths[0],
-        //     file_path:'news'
-        //   },
-        //   success: (result) => {
-        //     console.log(result)
-        //   },
-        //   });
-          // wx.request({
-          //   url: 'http://job.dongdongidea.com/index/index/uploads',
-          //   data: {
-          //     file:this.data.tempFilePaths[0],
-          //     file_path:'news'
-          //   },
-          //   method: 'POST',
-          //   success: (result) => {
-          //     console.log(result);
-          //   },
-          // });
+        console.log('获取到后台的值'+tempFilePaths)
+        // tempFilePaths = tempFilePaths.join('');
+        wx.uploadFile({
+          url: 'http://job.dongdongidea.com/index/index/uploads',
+          filePath: this.data.tempFilePaths[0],
+          name: 'file',
+          formData: {
+            // 'user': 'test'
+          },
+          success: (result1) => {
+            console.log(result1)
+          },
+          });
       },
     });
   },
